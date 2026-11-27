@@ -1,0 +1,17 @@
+Audit Summary (auto-generated)
+Run date: 2026-11-27
+Transactions analysed: 1000 | Flagged: 51 (5.1%)
+
+Top risks:
+1. benford_deviation: risk score 0, threshold chi2 p-value < 0.05
+   Evidence: chi2_statistic=455.27549702173235, p_value=2.7384164710632798e-93, per_digit_observed={"1": 144, "2": 257, "3": 247, "4": 205, "5": 66, "6": 14..., per_digit_expected={"1": 301.0299956639812, "2": 176.09125905568123, "3": 12..., per_digit_deviation={"1": -157.0299956639812, "2": 80.90874094431877, "3": 12...
+2. statistical_outlier: risk score 30, threshold |z| > 3
+   Evidence: z_score=3.313872730560108, account_mean=15328.45074074074, account_std=1504.2639426942353, account_tx_count=54
+3. ml_isolation_forest: risk score 25, threshold isolation_forest_decision < 0
+   Evidence: anomaly_score=-0.02185538664878328, feature_contributions={"vendor_enc": -22.0, "account_enc": -6.0, "hour_of_day":...
+4. ml_isolation_forest: risk score 25, threshold isolation_forest_decision < 0
+   Evidence: anomaly_score=-0.004700902821800246, feature_contributions={"account_enc": 7.0, "vendor_enc": -3.0, "hour_of_day": -...
+5. ml_isolation_forest: risk score 25, threshold isolation_forest_decision < 0
+   Evidence: anomaly_score=-0.004018948653500609, feature_contributions={"vendor_enc": -17.0, "account_enc": -6.0, "day_of_week":...
+
+Limitations: This analysis covers rule-based checks (statistical outlier, Benford's law, duplicate payments, weekend/after-hours postings, round amounts) and an exploratory Isolation Forest model. These checks are heuristic indicators; they do not prove fraud or error. All flagged items require auditor judgement before conclusions are drawn.

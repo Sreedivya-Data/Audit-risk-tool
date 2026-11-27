@@ -1,0 +1,21 @@
+account,tx_count,flag_count_by_rule,mean_risk_score,max_risk_score,is_small_sample
+ACC-01,48,{'ml_isolation_forest': 2},1.0416666666666667,25.0,False
+ACC-02,50,{},0.0,0.0,False
+ACC-03,66,{'ml_isolation_forest': 7},2.6515151515151514,25.0,False
+ACC-04,51,{},0.0,0.0,False
+ACC-05,40,{'ml_isolation_forest': 13},8.125,25.0,False
+ACC-06,47,{'ml_isolation_forest': 2},1.0638297872340425,25.0,False
+ACC-07,48,{},0.0,0.0,False
+ACC-08,31,{},0.0,0.0,False
+ACC-09,58,{'ml_isolation_forest': 2},0.8620689655172413,25.0,False
+ACC-10,52,{},0.0,0.0,False
+ACC-11,57,{},0.0,0.0,False
+ACC-12,49,{'ml_isolation_forest': 2},1.0204081632653061,25.0,False
+ACC-13,47,{},0.0,0.0,False
+ACC-14,50,{},0.0,0.0,False
+ACC-15,54,{},0.0,0.0,False
+ACC-16,54,{'statistical_outlier': 1},0.5555555555555556,30.0,False
+ACC-17,59,{},0.0,0.0,False
+ACC-18,37,{'ml_isolation_forest': 16},10.81081081081081,25.0,False
+ACC-19,53,{'ml_isolation_forest': 3},1.4150943396226414,25.0,False
+ACC-20,49,{'ml_isolation_forest': 3},1.530612244897959,25.0,False

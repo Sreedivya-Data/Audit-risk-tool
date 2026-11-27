@@ -1,0 +1,398 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Set up project structure, configuration, and core data models": [
+      {
+        "executionId": "54ecbb17-10dc-4e92-ad3f-bffca3f46afd",
+        "chatSessionId": "sess_3d42ff1b-c03c-492b-91dd-00752e62500c",
+        "timestamp": 1795613050309
+      },
+      {
+        "executionId": "54ecbb17-10dc-4e92-ad3f-bffca3f46afd",
+        "chatSessionId": "sess_3d42ff1b-c03c-492b-91dd-00752e62500c",
+        "timestamp": 1795613312645
+      }
+    ],
+    "2.1 Implement `transaction_loader.py` with the `load(path, config)` function": [
+      {
+        "executionId": "1bc280e1-6346-4eff-b4c8-40b4368a202c",
+        "chatSessionId": "sess_8431a47f-f543-4336-8f38-7800d91f2835",
+        "timestamp": 1795616668932
+      },
+      {
+        "executionId": "1bc280e1-6346-4eff-b4c8-40b4368a202c",
+        "chatSessionId": "sess_8431a47f-f543-4336-8f38-7800d91f2835",
+        "timestamp": 1795628709240
+      }
+    ],
+    "2. Implement Transaction_Loader": [
+      {
+        "executionId": "1bc280e1-6346-4eff-b4c8-40b4368a202c",
+        "chatSessionId": "sess_8431a47f-f543-4336-8f38-7800d91f2835",
+        "timestamp": 1795628709381
+      }
+    ],
+    "3.1 Implement statistical outlier detection in `anomaly_detector.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675567483
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675583847
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795676182192
+      }
+    ],
+    "3.3 Implement Benford's law test in `anomaly_detector.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675571196
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795676191581
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795676314983
+      }
+    ],
+    "4.1 Implement duplicate payment detection in `anomaly_detector.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675571554
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795676319821
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795682791806
+      }
+    ],
+    "4.3 Implement weekend/after-hours detection in `anomaly_detector.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675571783
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795682795683
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688222764
+      }
+    ],
+    "4.5 Implement round-number detection in `anomaly_detector.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675572001
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688226450
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688292912
+      }
+    ],
+    "5. Checkpoint — Ensure all tests pass for loader and detector modules": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675572192
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688297649
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688380125
+      }
+    ],
+    "6.1 Implement `ml_detector.py` with the `detect(df, rule_flags, config, run_log) -> list[Flag]` function": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675572377
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688384341
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688755177
+      }
+    ],
+    "7.1 Implement `risk_engine.py` with the `score(df, flags, config) -> tuple[DataFrame, DataFrame, DataFrame]` function": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675572565
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688759693
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688852410
+      }
+    ],
+    "8.1 Implement `summary_writer.py` with the `write_summary(flags, tx_scores, account_rollup, approver_rollup, config, run_log) -> str` function": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675572767
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688857610
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689570831
+      }
+    ],
+    "8.2 Implement output artifact writing in `run_log.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675572928
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688860706
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689574805
+      }
+    ],
+    "9. Checkpoint — Ensure all pipeline module tests pass": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675573118
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689579601
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689636744
+      }
+    ],
+    "10.1 Implement `data_generator.py` with `generate(count, seed, anomalies) -> pd.DataFrame` and the `AnomalySpec` dataclass": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675573349
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689640521
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689958260
+      }
+    ],
+    "11.1 Implement `tests/integration/test_statistical_outlier_recall.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675573511
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689963684
+      }
+    ],
+    "11.2 Implement `tests/integration/test_benford_recall.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675573657
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689967893
+      }
+    ],
+    "11.3 Implement `tests/integration/test_duplicate_recall.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675573832
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689972018
+      }
+    ],
+    "11.4 Implement `tests/integration/test_timing_recall.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675573995
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689975893
+      }
+    ],
+    "11.5 Implement `tests/integration/test_round_amount_recall.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675574189
+      },
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689979589
+      }
+    ],
+    "11.6 Implement `tests/integration/test_ml_recall.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675574383
+      }
+    ],
+    "11.7 Implement `tests/integration/test_false_positive_ceiling.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675574563
+      }
+    ],
+    "11.8 Implement `tests/integration/test_evidence_retrievability.py`": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675574781
+      }
+    ],
+    "12. Implement `main.py` CLI and wire all pipeline modules together": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675574978
+      }
+    ],
+    "13.1 Implement `dashboard.py` with sidebar filters and KPI row": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675575164
+      }
+    ],
+    "13.2 Implement dashboard charts and transaction table": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675575436
+      }
+    ],
+    "14. Write README and one-page summary document": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675575654
+      }
+    ],
+    "15. Final checkpoint — Ensure all tests pass and pipeline runs end-to-end": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795675575818
+      }
+    ],
+    "3. Implement Anomaly_Detector — statistical outlier and Benford's law rules": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795676315227
+      }
+    ],
+    "4. Implement Anomaly_Detector — duplicate payment, timing, and round-number rules": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688293185
+      }
+    ],
+    "6. Implement ML_Detector": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688755530
+      }
+    ],
+    "7. Implement Risk_Engine": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795688852738
+      }
+    ],
+    "8. Implement Summary_Writer and run-log / output-artifact writing": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689575111
+      }
+    ],
+    "10. Implement Data Generator": [
+      {
+        "executionId": "ff08c770-b67f-4ae3-8b69-ca4ce11fe10c",
+        "chatSessionId": "sess_9766775b-a7b3-4ef8-bdfe-be99e8ebbda7",
+        "timestamp": 1795689958527
+      }
+    ]
+  }
+}

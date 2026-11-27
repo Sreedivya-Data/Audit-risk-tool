@@ -1,0 +1,41 @@
+# AI Audit and Risk Analytics Tool — default configuration
+# Override any value here without touching source code.
+
+# Statistical outlier detection
+zscore_threshold: 3.0
+min_account_tx: 10
+
+# Benford's law test
+benford_min_count: 100
+benford_significance: 0.05
+
+# Duplicate payment detection
+duplicate_window_days: 7
+
+# Timing rules
+business_start: "08:00"
+business_end: "18:00"
+
+# Round-number detection
+round_threshold: 1000.0
+
+# Machine-learning detection
+min_ml_tx: 100
+random_state: 42
+
+# Risk-scoring weights (rule -> base points)
+rule_weights:
+  statistical_outlier: 30
+  benford_deviation: 20
+  duplicate_payment: 35
+  weekend_posting: 10
+  after_hours_posting: 15
+  round_amount: 10
+  ml_isolation_forest: 25
+
+# AI summary settings
+openai_model: "gpt-4o-mini"
+openai_max_tokens: 600
+openai_timeout: 30
+top_risks_in_summary: 5
+summary_max_words: 400

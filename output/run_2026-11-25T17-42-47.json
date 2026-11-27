@@ -1,0 +1,43 @@
+{
+  "run_id": "0e1c183f-e12e-4a1c-8af1-e44f00e7fece",
+  "timestamp": "2026-11-25T17:42:47.593508+00:00",
+  "input_file": "data\\smoke_test.csv",
+  "config_snapshot": {
+    "zscore_threshold": 3.0,
+    "min_account_tx": 10,
+    "benford_min_count": 100,
+    "benford_significance": 0.05,
+    "duplicate_window_days": 7,
+    "business_start": "08:00:00",
+    "business_end": "18:00:00",
+    "round_threshold": 1000.0,
+    "min_ml_tx": 100,
+    "random_state": 42,
+    "rule_weights": {
+      "statistical_outlier": 30,
+      "benford_deviation": 20,
+      "duplicate_payment": 35,
+      "weekend_posting": 10,
+      "after_hours_posting": 15,
+      "round_amount": 10,
+      "ml_isolation_forest": 25
+    },
+    "openai_model": "gpt-4o-mini",
+    "openai_max_tokens": 600,
+    "openai_timeout": 30,
+    "top_risks_in_summary": 5,
+    "summary_max_words": 400
+  },
+  "row_counts": {
+    "loaded": 11,
+    "coerced": 5,
+    "excluded": 5,
+    "duplicates_removed": 1
+  },
+  "rule_flag_counts": {},
+  "skipped_checks": [],
+  "ml_skip_reason": null,
+  "ai_prompt": null,
+  "ai_response": null,
+  "summary_text": null
+}

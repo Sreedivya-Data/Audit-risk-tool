@@ -1,0 +1,11 @@
+approver,tx_count,flag_count_by_rule,mean_risk_score,max_risk_score,is_small_sample
+APR-01,96,{'ml_isolation_forest': 15},3.90625,25.0,False
+APR-02,96,{'ml_isolation_forest': 4},1.0416666666666667,25.0,False
+APR-03,124,{'ml_isolation_forest': 9},1.814516129032258,25.0,False
+APR-04,96,{'ml_isolation_forest': 2},0.5208333333333334,25.0,False
+APR-05,112,{'ml_isolation_forest': 3},0.6696428571428571,25.0,False
+APR-06,96,"{'ml_isolation_forest': 1, 'statistical_outlier': 1}",0.5729166666666666,30.0,False
+APR-07,105,{'ml_isolation_forest': 1},0.23809523809523808,25.0,False
+APR-08,91,{'ml_isolation_forest': 2},0.5494505494505495,25.0,False
+APR-09,97,{'ml_isolation_forest': 7},1.8041237113402062,25.0,False
+APR-10,87,{'ml_isolation_forest': 6},1.7241379310344827,25.0,False

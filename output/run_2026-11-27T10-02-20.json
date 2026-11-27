@@ -1,0 +1,43 @@
+{
+  "run_id": "018812ac-d12d-446a-b329-6a39e52727f9",
+  "timestamp": "2026-11-27T10:02:20.848835+00:00",
+  "input_file": "data\\sample_transactions.csv",
+  "config_snapshot": {
+    "zscore_threshold": 3.0,
+    "min_account_tx": 10,
+    "benford_min_count": 100,
+    "benford_significance": 0.05,
+    "duplicate_window_days": 7,
+    "business_start": "08:00:00",
+    "business_end": "18:00:00",
+    "round_threshold": 1000.0,
+    "min_ml_tx": 100,
+    "random_state": 42,
+    "rule_weights": {
+      "statistical_outlier": 30,
+      "benford_deviation": 20,
+      "duplicate_payment": 35,
+      "weekend_posting": 10,
+      "after_hours_posting": 15,
+      "round_amount": 10,
+      "ml_isolation_forest": 25
+    },
+    "openai_model": "gpt-4o-mini",
+    "openai_max_tokens": 600,
+    "openai_timeout": 30,
+    "top_risks_in_summary": 5,
+    "summary_max_words": 400
+  },
+  "row_counts": {
+    "loaded": 0,
+    "coerced": 0,
+    "excluded": 0,
+    "duplicates_removed": 0
+  },
+  "rule_flag_counts": {},
+  "skipped_checks": [],
+  "ml_skip_reason": null,
+  "ai_prompt": "You are preparing an audit summary for a non-technical client.\n\nDataset: 1000 transactions analysed, 292 flagged (29.2%).\n\nTop risks (by risk score):\n1. Rule: benford_deviation | TX ID: __dataset__ | Risk score: 0 | Threshold: chi2 p-value < 0.05 | Evidence: {\"chi2_statistic\": 455.27549702173235, \"p_value\": 2.7384164710632798e-93, \"per_digit_observed\": {\"1\": 144, \"2\": 257, \"3\": 247, \"4\": 205, \"5\": 66, \"6\": 14, \"7\": 16, \"8\": 25, \"9\": 26}, \"per_digit_expected\": {\"1\": 301.0299956639812, \"2\": 176.09125905568123, \"3\": 124.93873660829993, \"4\": 96.91001300805642, \"5\": 79.18124604762481, \"6\": 66.94678963061322, \"7\": 57.99194697768673, \"8\": 51.152522447381294, \"9\": 45.757490560675144}, \"per_digit_deviation\": {\"1\": -157.0299956639812, \"2\": 80.90874094431877, \"3\": 122.06126339170007, \"4\": 108.08998699194358, \"5\": -13.18124604762481, \"6\": -52.946789630613225, \"7\": -41.99194697768673, \"8\": -26.152522447381294, \"9\": -19.757490560675144}}\n2. Rule: weekend_posting | TX ID: 9a3eb28acd95 | Risk score: 35 | Threshold: weekday >= 5 (Saturday or Sunday) | Evidence: {\"day_of_week\": \"Sunday\", \"posting_date\": \"2024-12-29\"}\n3. Rule: weekend_posting | TX ID: a0a068797227 | Risk score: 35 | Threshold: weekday >= 5 (Saturday or Sunday) | Evidence: {\"day_of_week\": \"Saturday\", \"posting_date\": \"2024-03-02\"}\n4. Rule: weekend_posting | TX ID: 20d2a800d716 | Risk score: 35 | Threshold: weekday >= 5 (Saturday or Sunday) | Evidence: {\"day_of_week\": \"Saturday\", \"posting_date\": \"2024-08-17\"}\n5. Rule: weekend_posting | TX ID: 90ab3349fe10 | Risk score: 35 | Threshold: weekday >= 5 (Saturday or Sunday) | Evidence: {\"day_of_week\": \"Sunday\", \"posting_date\": \"2024-09-01\"}\n\nWrite a concise, plain-English summary covering the top risks above, citing the specific evidence for each. Do NOT include a limitations statement (it will be appended separately). Limit to 400 words.",
+  "ai_response": "FALLBACK",
+  "summary_text": "Audit Summary (auto-generated)\nRun date: 2026-11-27\nTransactions analysed: 1000 | Flagged: 292 (29.2%)\n\nTop risks:\n1. benford_deviation: risk score 0, threshold chi2 p-value < 0.05\n   Evidence: chi2_statistic=455.27549702173235, p_value=2.7384164710632798e-93, per_digit_observed={\"1\": 144, \"2\": 257, \"3\": 247, \"4\": 205, \"5\": 66, \"6\": 14..., per_digit_expected={\"1\": 301.0299956639812, \"2\": 176.09125905568123, \"3\": 12..., per_digit_deviation={\"1\": -157.0299956639812, \"2\": 80.90874094431877, \"3\": 12...\n2. weekend_posting: risk score 35, threshold weekday >= 5 (Saturday or Sunday)\n   Evidence: day_of_week=Sunday, posting_date=2024-12-29\n3. weekend_posting: risk score 35, threshold weekday >= 5 (Saturday or Sunday)\n   Evidence: day_of_week=Saturday, posting_date=2024-03-02\n4. weekend_posting: risk score 35, threshold weekday >= 5 (Saturday or Sunday)\n   Evidence: day_of_week=Saturday, posting_date=2024-08-17\n5. weekend_posting: risk score 35, threshold weekday >= 5 (Saturday or Sunday)\n   Evidence: day_of_week=Sunday, posting_date=2024-09-01\n\nLimitations: This analysis covers rule-based checks (statistical outlier, Benford's law, duplicate payments, weekend/after-hours postings, round amounts) and an exploratory Isolation Forest model. These checks are heuristic indicators; they do not prove fraud or error. All flagged items require auditor judgement before conclusions are drawn."
+}

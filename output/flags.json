@@ -1,0 +1,705 @@
+[
+  {
+    "tx_id": "7fbba3635af4",
+    "rule": "statistical_outlier",
+    "threshold": "|z| > 3",
+    "evidence": {
+      "z_score": 3.313872730560108,
+      "account_mean": 15328.45074074074,
+      "account_std": 1504.2639426942353,
+      "account_tx_count": 54
+    }
+  },
+  {
+    "tx_id": "__dataset__",
+    "rule": "benford_deviation",
+    "threshold": "chi2 p-value < 0.05",
+    "evidence": {
+      "chi2_statistic": 455.27549702173235,
+      "p_value": 2.7384164710632798e-93,
+      "per_digit_observed": {
+        "1": 144,
+        "2": 257,
+        "3": 247,
+        "4": 205,
+        "5": 66,
+        "6": 14,
+        "7": 16,
+        "8": 25,
+        "9": 26
+      },
+      "per_digit_expected": {
+        "1": 301.0299956639812,
+        "2": 176.09125905568123,
+        "3": 124.93873660829993,
+        "4": 96.91001300805642,
+        "5": 79.18124604762481,
+        "6": 66.94678963061322,
+        "7": 57.99194697768673,
+        "8": 51.152522447381294,
+        "9": 45.757490560675144
+      },
+      "per_digit_deviation": {
+        "1": -157.0299956639812,
+        "2": 80.90874094431877,
+        "3": 122.06126339170007,
+        "4": 108.08998699194358,
+        "5": -13.18124604762481,
+        "6": -52.946789630613225,
+        "7": -41.99194697768673,
+        "8": -26.152522447381294,
+        "9": -19.757490560675144
+      }
+    }
+  },
+  {
+    "tx_id": "bbc0502412a9",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.02185538664878328,
+      "feature_contributions": {
+        "vendor_enc": -22.0,
+        "account_enc": -6.0,
+        "hour_of_day": 3.916666666666666
+      }
+    }
+  },
+  {
+    "tx_id": "f0394cfd9a41",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.004700902821800246,
+      "feature_contributions": {
+        "account_enc": 7.0,
+        "vendor_enc": -3.0,
+        "hour_of_day": -2.8166666666666664
+      }
+    }
+  },
+  {
+    "tx_id": "74de87f228d9",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.004018948653500609,
+      "feature_contributions": {
+        "vendor_enc": -17.0,
+        "account_enc": -6.0,
+        "day_of_week": 2.0
+      }
+    }
+  },
+  {
+    "tx_id": "fa50da2ba82f",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.005035959677827773,
+      "feature_contributions": {
+        "vendor_enc": 25.0,
+        "account_enc": -10.0,
+        "approver_enc": -2.0
+      }
+    }
+  },
+  {
+    "tx_id": "bd77f13c3570",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.01678651247377172,
+      "feature_contributions": {
+        "vendor_enc": -11.0,
+        "account_enc": -6.0,
+        "approver_enc": 5.0
+      }
+    }
+  },
+  {
+    "tx_id": "1157e902e601",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.021553560029895724,
+      "feature_contributions": {
+        "vendor_enc": 24.0,
+        "account_enc": 7.0,
+        "approver_enc": 5.0
+      }
+    }
+  },
+  {
+    "tx_id": "4957aa8fe671",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.05680730324058325,
+      "feature_contributions": {
+        "vendor_enc": -20.0,
+        "account_enc": 7.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "fb10c519bce8",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.01528841098015521,
+      "feature_contributions": {
+        "vendor_enc": 22.0,
+        "hour_of_day": -3.583333333333334,
+        "amount_z_norm": 2.440670023701868
+      }
+    }
+  },
+  {
+    "tx_id": "d8f57ed7eca7",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.022206760855203456,
+      "feature_contributions": {
+        "vendor_enc": 18.0,
+        "account_enc": 8.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "ff5d1466f179",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.03621241664282471,
+      "feature_contributions": {
+        "vendor_enc": 25.0,
+        "account_enc": -6.0,
+        "approver_enc": 4.0
+      }
+    }
+  },
+  {
+    "tx_id": "fa5b2cf2d02a",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.03929404124426039,
+      "feature_contributions": {
+        "vendor_enc": 9.0,
+        "account_enc": 7.0,
+        "approver_enc": 5.0
+      }
+    }
+  },
+  {
+    "tx_id": "b22dfcb87d26",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.020186562929167096,
+      "feature_contributions": {
+        "vendor_enc": -10.0,
+        "account_enc": -6.0,
+        "hour_of_day": 3.916666666666666
+      }
+    }
+  },
+  {
+    "tx_id": "4a58ba452781",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.042427511061345013,
+      "feature_contributions": {
+        "account_enc": -8.0,
+        "hour_of_day": -4.083333333333334,
+        "amount_z_norm": 3.02777958292452
+      }
+    }
+  },
+  {
+    "tx_id": "8e0b0b5f3fdc",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.009177762093090958,
+      "feature_contributions": {
+        "vendor_enc": -21.0,
+        "account_enc": -8.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "bde78ef77186",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.002660311296631579,
+      "feature_contributions": {
+        "account_enc": -8.0,
+        "vendor_enc": 7.0,
+        "approver_enc": 5.0
+      }
+    }
+  },
+  {
+    "tx_id": "9e312a88eb99",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.005198746018457823,
+      "feature_contributions": {
+        "vendor_enc": -20.0,
+        "account_enc": -6.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "e31112a6a071",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.010857117188282861,
+      "feature_contributions": {
+        "account_enc": -5.0,
+        "approver_enc": 4.0,
+        "hour_of_day": 3.916666666666666
+      }
+    }
+  },
+  {
+    "tx_id": "8efd581f0f7f",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.0265787689723046,
+      "feature_contributions": {
+        "vendor_enc": 23.0,
+        "account_enc": -6.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "ec9b64aedac7",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.0025365724272023993,
+      "feature_contributions": {
+        "account_enc": 9.0,
+        "hour_of_day": 3.916666666666666,
+        "day_of_week": -2.0
+      }
+    }
+  },
+  {
+    "tx_id": "31d7c7915afd",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.006547133321108234,
+      "feature_contributions": {
+        "vendor_enc": 18.0,
+        "account_enc": 7.0,
+        "hour_of_day": 2.633333333333333
+      }
+    }
+  },
+  {
+    "tx_id": "ff6af9eb7228",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.005967224233499491,
+      "feature_contributions": {
+        "vendor_enc": 20.0,
+        "account_enc": 7.0,
+        "approver_enc": 4.0
+      }
+    }
+  },
+  {
+    "tx_id": "fc03c9162ffe",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.016160095514402784,
+      "feature_contributions": {
+        "vendor_enc": -15.0,
+        "account_enc": 7.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "4c6d6b48ceac",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.03454392611608548,
+      "feature_contributions": {
+        "vendor_enc": -8.0,
+        "account_enc": 7.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "4e47df911b0c",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.016095659739584822,
+      "feature_contributions": {
+        "vendor_enc": 19.0,
+        "account_enc": -6.0,
+        "hour_of_day": 3.433333333333332
+      }
+    }
+  },
+  {
+    "tx_id": "e197f6306a45",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.030588112778199505,
+      "feature_contributions": {
+        "vendor_enc": 21.0,
+        "account_enc": -6.0,
+        "approver_enc": 5.0
+      }
+    }
+  },
+  {
+    "tx_id": "a7bf0b0dceaa",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.021317051144799315,
+      "feature_contributions": {
+        "vendor_enc": 23.0,
+        "account_enc": 7.0,
+        "day_of_week": -2.0
+      }
+    }
+  },
+  {
+    "tx_id": "13a6327032b8",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.010034098530445124,
+      "feature_contributions": {
+        "vendor_enc": -11.0,
+        "hour_of_day": 3.7499999999999982,
+        "amount_z_norm": 2.4223963736933696
+      }
+    }
+  },
+  {
+    "tx_id": "168c66b14744",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.007707159244608408,
+      "feature_contributions": {
+        "account_enc": -8.0,
+        "vendor_enc": -7.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "14ef01b597dd",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.004532516434694767,
+      "feature_contributions": {
+        "vendor_enc": -12.0,
+        "account_enc": 9.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "6a970753d5f4",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.007612809200475468,
+      "feature_contributions": {
+        "account_enc": 7.0,
+        "vendor_enc": 4.0,
+        "approver_enc": -2.0
+      }
+    }
+  },
+  {
+    "tx_id": "13b769a9554b",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.01648732469208458,
+      "feature_contributions": {
+        "vendor_enc": 13.0,
+        "account_enc": 8.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "651fb88dcb9e",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.03281048738860359,
+      "feature_contributions": {
+        "vendor_enc": 25.0,
+        "account_enc": -8.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "be58b3855406",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.008075155293833292,
+      "feature_contributions": {
+        "vendor_enc": 15.0,
+        "account_enc": -6.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "ba24a7c9a934",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.00962031382926165,
+      "feature_contributions": {
+        "account_enc": 7.0,
+        "approver_enc": 5.0,
+        "vendor_enc": -5.0
+      }
+    }
+  },
+  {
+    "tx_id": "c3e0e4873446",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.004936418326393133,
+      "feature_contributions": {
+        "vendor_enc": 11.0,
+        "account_enc": -6.0,
+        "hour_of_day": 3.916666666666666
+      }
+    }
+  },
+  {
+    "tx_id": "ae3170cb5858",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.02014033843058116,
+      "feature_contributions": {
+        "vendor_enc": -20.0,
+        "account_enc": -8.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "cb2a4c670d34",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.026166681164359162,
+      "feature_contributions": {
+        "vendor_enc": 9.0,
+        "account_enc": 7.0,
+        "hour_of_day": -3.75
+      }
+    }
+  },
+  {
+    "tx_id": "5fa676006d68",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.01172074090150732,
+      "feature_contributions": {
+        "vendor_enc": 18.0,
+        "account_enc": 9.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "e5e019d44453",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.05337758414803673,
+      "feature_contributions": {
+        "vendor_enc": 13.0,
+        "account_enc": 7.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "18910b681705",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.009657954415982717,
+      "feature_contributions": {
+        "vendor_enc": -18.0,
+        "account_enc": -5.0,
+        "hour_of_day": 3.7333333333333325
+      }
+    }
+  },
+  {
+    "tx_id": "5fb75a20927c",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.007933815974544123,
+      "feature_contributions": {
+        "vendor_enc": 24.0,
+        "account_enc": 8.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "837bd5cb9b97",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.04833577638483233,
+      "feature_contributions": {
+        "vendor_enc": 25.0,
+        "account_enc": 7.0,
+        "approver_enc": -2.0
+      }
+    }
+  },
+  {
+    "tx_id": "14b1f57be49b",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.013664703495856467,
+      "feature_contributions": {
+        "vendor_enc": -12.0,
+        "account_enc": 7.0,
+        "approver_enc": -4.0
+      }
+    }
+  },
+  {
+    "tx_id": "bff15a82b95f",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.03185933688757414,
+      "feature_contributions": {
+        "vendor_enc": 15.0,
+        "account_enc": -8.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  },
+  {
+    "tx_id": "339c9496c863",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.012462339346040907,
+      "feature_contributions": {
+        "vendor_enc": 24.0,
+        "account_enc": -10.0,
+        "approver_enc": -3.0
+      }
+    }
+  },
+  {
+    "tx_id": "e6c716199fae",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.005386303233378631,
+      "feature_contributions": {
+        "vendor_enc": 19.0,
+        "account_enc": 7.0,
+        "hour_of_day": -2.0500000000000007
+      }
+    }
+  },
+  {
+    "tx_id": "affa26df890a",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.017096996503014994,
+      "feature_contributions": {
+        "vendor_enc": -13.0,
+        "account_enc": -6.0,
+        "approver_enc": 4.0
+      }
+    }
+  },
+  {
+    "tx_id": "69aca9f4d129",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.013142445507347889,
+      "feature_contributions": {
+        "vendor_enc": -10.0,
+        "approver_enc": -4.0,
+        "hour_of_day": 3.916666666666666
+      }
+    }
+  },
+  {
+    "tx_id": "afab9f6dea94",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.004075263999076872,
+      "feature_contributions": {
+        "vendor_enc": 5.0,
+        "approver_enc": 4.0,
+        "hour_of_day": 3.916666666666666
+      }
+    }
+  },
+  {
+    "tx_id": "7d4363a7ad1c",
+    "rule": "ml_isolation_forest",
+    "threshold": "isolation_forest_decision < 0",
+    "evidence": {
+      "anomaly_score": -0.015912797524952005,
+      "feature_contributions": {
+        "vendor_enc": 15.0,
+        "account_enc": -6.0,
+        "hour_of_day": -4.083333333333334
+      }
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "run_id": "bf9f3af9-a6be-4e96-b1e2-c7ee4591edb7",
+  "timestamp": "2026-11-27T10:02:21.631757+00:00",
+  "input_file": "data\\sample_transactions.csv",
+  "config_snapshot": {
+    "zscore_threshold": 3.0,
+    "min_account_tx": 10,
+    "benford_min_count": 100,
+    "benford_significance": 0.05,
+    "duplicate_window_days": 7,
+    "business_start": "08:00:00",
+    "business_end": "18:00:00",
+    "round_threshold": 1000.0,
+    "min_ml_tx": 100,
+    "random_state": 42,
+    "rule_weights": {
+      "statistical_outlier": 30,
+      "benford_deviation": 20,
+      "duplicate_payment": 35,
+      "weekend_posting": 10,
+      "after_hours_posting": 15,
+      "round_amount": 10,
+      "ml_isolation_forest": 25
+    },
+    "openai_model": "gpt-4o-mini",
+    "openai_max_tokens": 600,
+    "openai_timeout": 30,
+    "top_risks_in_summary": 5,
+    "summary_max_words": 400
+  },
+  "row_counts": {
+    "loaded": 1000,
+    "coerced": 140,
+    "excluded": 0,
+    "duplicates_removed": 0
+  },
+  "rule_flag_counts": {},
+  "skipped_checks": [],
+  "ml_skip_reason": null,
+  "ai_prompt": null,
+  "ai_response": null,
+  "summary_text": null
+}
