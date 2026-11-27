@@ -119,7 +119,7 @@ st.subheader("Flagged transactions")
 table = flagged.sort_values("risk_score", ascending=False)[
     ["tx_id", "date", "account", "amount", "approver", "vendor", "risk_score", "rules"]
 ]
-st.dataframe(table, use_container_width=True, hide_index=True)
+st.dataframe(table, width="stretch", hide_index=True)
 
 st.subheader("Why was it flagged?")
 if table.empty:
@@ -127,7 +127,7 @@ if table.empty:
 else:
     chosen = st.selectbox("Pick a transaction", table["tx_id"].tolist())
     detail = flags[flags["tx_id"] == chosen][["rule", "threshold", "evidence"]]
-    st.dataframe(detail, use_container_width=True, hide_index=True)
+    st.dataframe(detail, width="stretch", hide_index=True)
 
 # ---------------- Summary ----------------
 with st.expander("Audit summary", expanded=False):
